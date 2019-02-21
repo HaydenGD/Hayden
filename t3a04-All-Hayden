@@ -1,4 +1,4 @@
-<h1 align=center>All Javascript by Jacob</h1>
+<h1 align=center>All Javascript by Hayden</h1>
 
 
 <script>
@@ -37,9 +37,9 @@ function my01(){
 <input type=button value="arrays" onclick="{
    myMax = 3
    myArray = new Array(myMax)
-   myArray[1] = 'Jerry'
-   myArray[2] = 'Tom'
-   myArray[3] = 'Mary'
+   myArray[1] = 'Bill'
+   myArray[2] = 'Bob'
+   myArray[3] = 'Bolb'
    document.all.myArea01.value = ''
    for ( x = 1; x <= myMax; x++){
     document.all.myArea01.value += myArray[x] + ', '
@@ -50,7 +50,7 @@ function my01(){
 
 
 <input type=button value="events onmouseover" onmouseover="{
-   document.all.myArea01.value = 'I miss my wife tails.'
+   document.all.myArea01.value = 'Taste my knuckles.'
 }">
  
   <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">
@@ -58,8 +58,8 @@ events site</a>
 
 <input type=button value="Object Example" onClick="{
   person = {
-  firstName: 'Big'
-  lastName: 'Boss'
+  firstName: 'miles'
+  lastName: 'prowr'
   age: 37, 
   eyeColor: 'Blue'
 }
@@ -69,7 +69,6 @@ events site</a>
 
 
    
-
 
 
 
