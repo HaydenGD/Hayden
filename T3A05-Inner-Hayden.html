@@ -1,0 +1,43 @@
+<h1 align=center>InnerHTML by Hayden</h1>
+Put a link to the best help page about "innerHTML" in javascript 
+<a href="http://www.google.ca">google</a>
+
+
+x = <input type=text id="myText01" value=7>
+<div id="myDiv01"></div>
+
+<input type=button value="test innerHTML" onClick="{
+document.all.myDiv01.innerHTML =
+ 'Cool <font color=red> innerHTML </font> jacob be like i miss my wife tails'
+}">
+
+<input type=button value="CSS style" onClick="{
+	document.all.myDiv01.innerHTML =
+	'cool <font style=\' color:limegreen; background-color:yellow; \'>epic'+
+	' </font>gamer'
+}"> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" /> 
+    <meta charset="utf-8" />
+
+    <title>Test</title>
+
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <input type="submit" id="submit" onclick="document.getElementById('hidden').style.display = 'block';" />
+     </form>
+
+     <img id="hidden" class="hidden" src="0005277_boma-inukshuk-statue-small.jpeg" />
+  </body>
+</html>
