@@ -1,16 +1,18 @@
 <h2 align=center>Auto Move by Hayden</h2>
-<img src="mew.gif" id="mew" style="position:relative; z-index:-1; left:0px; top0px; height:100px; width:100px; ">
-<input type=button value=right onclick="{
-document.getElementById('mew').style.left = parseInt(document.getElementById('mew').style.left) + 10 + 'px'
-}">
-<Input type=button value=auto onclick="{ alert()
-}">
+
+<img src="mew.gif" id="mew" style="position:relative;
+z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+
 <script> var myLooping = 0 </script>
+<input type=button value="auto right" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.left =
+		parseInt(document.getElementById('mew').style.left) +10 + 'px'
 
-<input type=button value="auto right" onclick="{ clearInterval(function(){
-	document.getElementById('mew').style.left = '0px'
-}
-
+		if (parseInt(document.getElementById('mew').style.left) > 600){
+		     document.getElementById('mew').style.left = '0px'
+		}
    }, 60)
 }">
 </body>
