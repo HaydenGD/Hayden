@@ -4,7 +4,7 @@
 
 
 }">
-<h2 align=center>Collisions by Fred </h2>
+<h2 align=center>Collisions by Hayden </h2>
 
 <script>
 
@@ -38,7 +38,7 @@ function myHitOther(my1, my2){
 
 <table>
 <tr><td>
-<input type=button value="-"
+
 </td>
 <td>
 <input type=button value="^"  onClick="{
@@ -48,7 +48,7 @@ function myHitOther(my1, my2){
        document.getElementById('myImage01').style.left = '10px'
  }">
 </td>  
-<td><input type=button value="-"</td>
+<td></td>
 </tr>
 <tr><td>
 <input type=button value="<"  onClick="{
@@ -59,21 +59,33 @@ function myHitOther(my1, my2){
        //alert('I win')
 }">
 </td><td>
-}
-</td>
+
+</td><td>
 <input type=button value=">"  onClick="{
    document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 6 + 'px'
 }
    if ( myHitOther('myImage01','myImage02') ){
        document.getElementById('myImage01').style.left = '10px'
 }">
-<input type=button value="v"  onClick="{
+</td><tr><td>
+<td><input type=button value="v"  onClick="{
    document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
 }
    if ( myHitOther('myImage01','myImage02') ){
        document.getElementById('myImage01').style.left = '10px'
    }">
+</td>
 
+</td>
 
+</td>
+<td><input type=button value="+"  onClick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}
+   if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+   }">
 
 </body>
