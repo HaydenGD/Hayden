@@ -2,9 +2,67 @@
 
 <img src="mew.gif" id="mew" style="position:relative;
 z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+<table>
+<script> var myLooping = 0 </script>
+<input type=button value="+" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.top =
+		parseInt(document.getElementById('mew').style.top) -10 + 'px'
+	document.getElementById('mew').style.left =
+		parseInt(document.getElementById('mew').style.left) -10 + 'px'
+		if (parseInt(document.getElementById('mew').style.left) < 0){
+		     document.getElementById('mew').style.left = '600px'
+		if (parseInt(document.getElementById('mew').style.top) < 0){
+		     document.getElementById('mew').style.top = '600px' }
+
+
+   }, 60)
+}">
+<script> var myLooping = 0 </script>
+<input type=button value="^" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.top =
+		parseInt(document.getElementById('mew').style.top) -10 + 'px'
+
+		if (parseInt(document.getElementById('mew').style.top) < 0){
+		     document.getElementById('mew').style.top = '600px'
+		}
+   }, 60)
+}">
+<script> var myLooping = 0 </script>
+<input type=button value="+" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.top =
+		parseInt(document.getElementById('mew').style.top) -10 + 'px'
+	document.getElementById('mew').style.left =
+		parseInt(document.getElementById('mew').style.left) +10 + 'px'
+		if (parseInt(document.getElementById('mew').style.left) < 0){
+		     document.getElementById('mew').style.left = '600px' }
+		if (parseInt(document.getElementById('mew').style.top) < 0){
+		     document.getElementById('mew').style.top = '600px' }
+
+
+   }, 60)
+}">
+<script> var myLooping = 0 </script>
+<input type=button value="<" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.left =
+		parseInt(document.getElementById('mew').style.left) -10 + 'px'
+
+		if (parseInt(document.getElementById('mew').style.left) < 0){
+		     document.getElementById('mew').style.left = '600px'
+		}
+   }, 60)
+}">
+
 
 <script> var myLooping = 0 </script>
-<input type=button value="auto right" onclick="{
+<input type=button value=">" onclick="{
 	clearInterval(myLooping)
 	myLooping = setInterval(function(){
 		document.getElementById('mew').style.left =
@@ -12,6 +70,18 @@ z-index:-1; left:0px; top:0px; height:100px; width:100px;">
 
 		if (parseInt(document.getElementById('mew').style.left) > 600){
 		     document.getElementById('mew').style.left = '0px'
+		}
+   }, 60)
+}">
+<script> var myLooping = 0 </script>
+<input type=button value="v" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+		document.getElementById('mew').style.top =
+		parseInt(document.getElementById('mew').style.top) +10 + 'px'
+
+		if (parseInt(document.getElementById('mew').style.top) > 600){
+		     document.getElementById('mew').style.top = '0px'
 		}
    }, 60)
 }">
