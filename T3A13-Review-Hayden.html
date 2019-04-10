@@ -1,22 +1,75 @@
 <h1 align> Review by Hayden </h1>
-<ol>
-<li> Input / output-- information into and out of your program
-<p><body onkeydown="{
-   document.all.myText01.value = event.key
+
+<script>
+function myFun(myPass){
+	document.getElementById('myDiv06').innerHTML = myPass
+}
+</script>
+
+
+
+<div id="myDiv06">Output goes here .. </div><br>
+
+
+<input type=button value="1" onclick="{
+	myVariable =`
+		1. Input/output
+		<p>2. Variables</p>
+		3. Decisions
+		<p>4. Loops</p>
+		5. Functions
+		<p>6. Arrays</p>
+		7. Objects
+		<p>8. Events</p>
+		9. Classes
+`
+	myFun(myVariable)
+
 }">
-<input type=text id="myText01" value=0>
-</BODY>
-
-<li> Variables-- store stuff
-<p> x = 3
-<li> Loops--repeat stuff
-<li> Decisions--decide stuff based on stored stuff
-<li> Functions-- named group of code that can be called multiple times
-<li> Arrays-- a numbered list of variables
-<li> Objects-- a named list of variables
-<li> events-- trigger computer code
-<li> Classes-- groups variables and functions to make programming easier
-</ol>
+<input type=button value="2" onclick="{
+	myVariable =`
 
 
-</HTML>
+<p>1. Input/output -- 'information into and out of your program'</p>
+<p>x = document.all.myText01.value // example input</p>
+
+2. Variables 'store stuff' eg: x = 3
+<p>3. Decisions -- 'decide stuff based on stored stuff'</p>
+
+if(x==3) {}
+<p>if (x <= 3){} else {}</p>
+if ((x > 3) & (x < 9)) {} else {}
+`
+myFun(myVariable)
+
+}">
+
+<input type=button value="3" onclick="{
+	myVariable =`
+4. Loops
+for (x=0; x < 3; x++){} // example for loop
+<p>5. Functions  -- named group of code that can be called multiple times
+function myFun() {} // defines a group of code</p>
+<p>6. Arrays -- a numbered list of variables</p>
+	<p>x[0] = 3;		x[1] = 6;</p>
+
+
+
+`
+	myFun(myVariable)
+
+}">
+
+<input type=button value="4" onclick="{
+	myVariable =`
+7.Objects -- a named list of variables 
+x = {age:16, name:'Hayden'}
+x. age   x.name
+		<p>8. Events -- trigger computer code
+onClick(), onMouseOver(), onBlur(), onFocus() about 20 learn them
+
+</p>
+`
+	myFun(myVariable)
+
+}">

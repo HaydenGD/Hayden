@@ -1,0 +1,59 @@
+<h1 align> Review by Hayden </h1>
+
+<ol>
+<li> Input / output-- information into and out of your program
+<p><body onkeydown="{
+   document.all.myText02.value = event.key
+}">
+<input type=text id="myText02" value=0>
+</BODY>
+
+<li> Variables-- store stuff
+<p> x = 3
+<li> Loops--repeat stuff
+<p>
+<input type=text id="myText01" value="7"><br>
+<textarea id="myArea01" rows=4 cols=70></textarea><br>
+
+<input type=button value="Decisions" onclick="{
+   x = 8 
+   if (x == 9){
+      document.all.myArea01.value = 'wow a nine'
+    } else {
+      document.all.myArea01.value = 'wow not a nine'
+    }
+}">
+<li> Functions-- named group of code that can be called multiple times
+<li> Arrays-- a numbered list of variables
+<p><input type=button value="arrays" onclick="{
+   myMax = 3
+   myArray = new Array(myMax)
+   myArray[1] = 'Bill'
+   myArray[2] = 'Bob'
+   myArray[3] = 'Bolb'
+   document.all.myArea01.value = ''
+   for ( x = 1; x <= myMax; x++){
+    document.all.myArea01.value += myArray[x] + ', '
+   }
+
+
+}">
+<li> Objects-- a named list of variables
+<p> <input type=button value="advanced" onclick="{
+person = {
+firstName: 'James',
+lastName: 'Dean',
+age: 18,
+}
+document.all.myArea01.value = 'firstname:' +
+person.firstName + ',lastname:' + person.lastName + ',age:' +person.age
+}">
+<li> events-- trigger computer code
+<p> <input type=button value="events" onmouseover="{
+   document.all.myArea01.value = 'Taste my knuckles.'
+}">
+<li> Classes-- groups variables and functions to make programming easier
+</ol>
+
+
+</HTML>
