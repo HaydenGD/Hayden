@@ -3,6 +3,7 @@
 <img src="mew.gif" id="mew" style="position:relative;
 z-index:-1; left:0px; top:0px; height:100px; width:100px;">
 <table>
+<tr><th>
 <script> var myLooping = 0 </script>
 <input type=button value="+" onclick="{
 	clearInterval(myLooping)
@@ -43,10 +44,15 @@ z-index:-1; left:0px; top:0px; height:100px; width:100px;">
 		     document.getElementById('mew').style.left = '600px' }
 		if (parseInt(document.getElementById('mew').style.top) < 0){
 		     document.getElementById('mew').style.top = '600px' }
-
+		if (parseInt(document.getElementById('mew').style.left) > 600){
+		     document.getElementById('mew').style.left = '0px'
+		}
 
    }, 60)
 }">
+</th></tr>
+</h2>
+<th><tr>
 <script> var myLooping = 0 </script>
 <input type=button value="<" onclick="{
 	clearInterval(myLooping)

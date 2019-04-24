@@ -1,0 +1,101 @@
+
+<h1 align=center> Encryption by Hayden</h1>
+<textarea id="myArea01" rows=4 cols=70>hey, vsaucê.</textarea><br> 
+
+
+
+<input type=button value="encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+
+
+      if (myString[myLoop] == 'h') {myTemp  = 'M'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'c'} 
+      if (myString[myLoop] == ',') {myTemp  = 'h'} 
+      if (myString[myLoop] == ' ') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'a'}
+      if (myString[myLoop] == 's') {myTemp  = 'l'}
+      if (myString[myLoop] == 'a') {myTemp  = ' '}  
+      if (myString[myLoop] == 'u') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'c') {myTemp  = 'e'}
+      if (myString[myLoop] == 'ê') {myTemp  = 'r'}  
+      if (myString[myLoop] == '.') {myTemp  = 'e'}  
+      if (myString[myLoop] == 'b') {myTemp  = 'd'}
+      if (myString[myLoop] == 'd') {myTemp  = 'b'}
+      if (myString[myLoop] == 'f') {myTemp  = 'g'}
+      if (myString[myLoop] == 'g') {myTemp  = 'f'}
+      if (myString[myLoop] == 'i') {myTemp  = 'j'}
+      if (myString[myLoop] == 'j') {myTemp  = 'k'}
+      if (myString[myLoop] == 'k') {myTemp  = 'n'}   
+      if (myString[myLoop] == 'l') {myTemp  = 'o'}           
+      if (myString[myLoop] == 'm') {myTemp  = 'p'}
+      if (myString[myLoop] == 'n') {myTemp  = 'q'}
+      if (myString[myLoop] == 'o') {myTemp  = 's'}
+      if (myString[myLoop] == 'p') {myTemp  = 't'}
+      if (myString[myLoop] == 'q') {myTemp  = 'u'}
+      if (myString[myLoop] == 'r') {myTemp  = 'v'}
+      if (myString[myLoop] == 't') {myTemp  = 'x'}                                                                       
+      if (myString[myLoop] == 'w') {myTemp  = 'z'}        
+//alert(myLoop+', '+myString[myLoop])
+
+      myString[myLoop] = myTemp
+   }
+
+   document.getElementById('myArea02').value = myString.join('')
+}"><br><br>
+
+
+
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
+
+<input type=button value="decrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+
+      if (myString[myLoop] == 'h') {myTemp  = 'M'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'c'} 
+      if (myString[myLoop] == ',') {myTemp  = 'h'} 
+      if (myString[myLoop] == ' ') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'a'}
+      if (myString[myLoop] == 's') {myTemp  = 'l'}
+      if (myString[myLoop] == 'a') {myTemp  = ' '}  
+      if (myString[myLoop] == 'u') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'c') {myTemp  = 'y'}
+      if (myString[myLoop] == 'ê') {myTemp  = 'r'}  
+      if (myString[myLoop] == '.') {myTemp  = 'e'}  
+      if (myString[myLoop] == 'b') {myTemp  = 'd'}
+      if (myString[myLoop] == 'd') {myTemp  = 'b'}
+      if (myString[myLoop] == 'f') {myTemp  = 'g'}
+      if (myString[myLoop] == 'g') {myTemp  = 'f'}
+      if (myString[myLoop] == 'i') {myTemp  = 'j'}
+      if (myString[myLoop] == 'j') {myTemp  = 'k'}
+      if (myString[myLoop] == 'k') {myTemp  = 'n'}   
+      if (myString[myLoop] == 'l') {myTemp  = 'o'}           
+      if (myString[myLoop] == 'm') {myTemp  = 'p'}
+      if (myString[myLoop] == 'n') {myTemp  = 'q'}
+      if (myString[myLoop] == 'o') {myTemp  = 's'}
+      if (myString[myLoop] == 'p') {myTemp  = 't'}
+      if (myString[myLoop] == 'q') {myTemp  = 'u'}
+      if (myString[myLoop] == 'r') {myTemp  = 'v'}
+      if (myString[myLoop] == 't') {myTemp  = 'x'}                                                                       
+      if (myString[myLoop] == 'w') {myTemp  = 'z'}      
+
+
+
+      myString[myLoop] = myTemp
+   }
+
+   document.getElementById('myArea03').value = myString.join('')
+}"><br><br>
+
+
+
+<textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
+
