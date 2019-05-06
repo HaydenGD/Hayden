@@ -1,0 +1,38 @@
+<h2 align=center>T4A03-Random-Bounce-Console-Score-Hayden.html</h2>
+
+<img src="spin.gif" id="mew" style="position:relative;
+z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+<input type=text id=myScore value=0>
+<script>
+var myLooping = 0 
+var mySpeed = 10
+var myDirection = 1 // or -1
+var myTotal = 0
+</script>
+<input type=button value=">" onclick="{
+	clearInterval(myLooping)
+	myLooping = setInterval(function(){
+	
+	mySpeed = (Math.floor(Math.random()*50)+5) * myDirection
+		document.getElementById('mew').style.left =
+		parseInt(document.getElementById('mew').style.left) + mySpeed + 'px'
+
+		// bounce of right side of screen
+		if (parseInt(document.getElementById('mew').style.left) > 50){
+		myDirection = myDirection * +1
+		myTotal = myTotal + 1
+		     document.getElementById('myScore').value = myTotal
+		}
+		if (parseInt(document.getElementById('mew').style.left) > -20){
+		myDirection = myDirection * -1
+		myTotal = myTotal + 1
+		     document.getElementById('myScore').value = myTotal
+		}
+console.log(mySpeed)
+//console.log(myTotal)
+
+   }, 60)
+}">
+
+</body>
+</html>
