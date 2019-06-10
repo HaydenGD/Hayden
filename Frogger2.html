@@ -1,0 +1,146 @@
+<h1><font color = white> Frogger </font></h1>
+
+
+<font size="+3">
+<p>-----mushroom get key</p>
+<p><b>-----key unlock door</b>
+<p>-----green is win</p>
+</font>
+
+<img id="myImage01" src="m.png" style="position:absolute; width: 50; height: 50; left:600px; top:550px; ">
+<img id="myImage02" src="frogger.png" style="position:absolute; width: 635; height: 100; left:165px; top:755px; ">
+<img id="myImage03" src="frogger.png" style="position:absolute; width: 635; height: 100; left:165px; top:295px; ">
+<img id="myImage04" src="frogger.png" style="position:absolute; width: 50; height: 420; left:165px; top:350px; ">
+<img id="myImage06" src="frogger.png" style="position:absolute; width: 50; height: 170; left:750px; top:350px; ">
+<img id="myImage07" src="a.png" style="position:absolute; width: 50; height: 50; left:165px; top:550px; ">
+
+<img id="myImage09" src="frogger.png" style="position:absolute; width: 50; height: 170; left:750px; top:650px; ">
+<img id="myImage10" src="frogger.png" style="position:absolute; width: 300; height: 50; left:750px; top:650px; ">
+<img id="myImage11" src="frogger.png" style="position:absolute; width: 300; height: 50; left:750px; top:490px; ">
+<img id="myImage12" src="frogger.png" style="position:absolute; width: 50; height: 210; left:1050px; top:490px; ">
+<img id="myImage05" src="key.png" style="position:absolute; width: 50; height: 50; left:950px; top:570px; ">
+
+
+
+
+<script>
+
+document.onkeydown = checkKey
+
+function checkKey(myEvent){
+
+
+if (myHitOther('myImage01','myImage02')) {location.reload()}
+
+if (myHitOther('myImage01','myImage03')) {location.reload()}
+
+if (myHitOther('myImage01','myImage04')) {location.reload()}
+
+if (myHitOther('myImage01','myImage06')) {location.reload()}
+
+if (myHitOther('myImage01','myImage09')) {location.reload()}
+
+if (myHitOther('myImage01','myImage10')) {location.reload()}
+
+if (myHitOther('myImage01','myImage11')) {location.reload()}
+
+if (myHitOther('myImage01','myImage12')) {location.reload()}
+
+if (myHitOther('myImage01','myImage05')) {window.location.href = "level2.html";}
+
+
+
+
+
+ if (myEvent.keyCode == 87){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 26 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 26 + 'px' }				
+ if (myEvent.keyCode == 83){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 26 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 26 + 'px'}
+//player
+ if (myEvent.keyCode == 83){ document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) - 50 + 'px' }					
+ if (myEvent.keyCode == 87){ document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) + 50 + 'px'}																			 
+//bottomwall
+ if (myEvent.keyCode == 83){ document.getElementById('myImage05').style.top = parseInt(document.getElementById('myImage05').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage05').style.left = parseInt(document.getElementById('myImage05').style.left) - 50 + 'px' }					
+ if (myEvent.keyCode == 87){ document.getElementById('myImage05').style.top = parseInt(document.getElementById('myImage05').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage05').style.left = parseInt(document.getElementById('myImage05').style.left) + 50 + 'px'}	
+//goal
+ if (myEvent.keyCode == 83){ document.getElementById('myImage04').style.top = parseInt(document.getElementById('myImage04').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage04').style.left = parseInt(document.getElementById('myImage04').style.left) - 50 + 'px' }					
+ if (myEvent.keyCode == 87){ document.getElementById('myImage04').style.top = parseInt(document.getElementById('myImage04').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage04').style.left = parseInt(document.getElementById('myImage04').style.left) + 50 + 'px'}	
+//leftwall
+ if (myEvent.keyCode == 83){ document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) - 50 + 'px' }					
+ if (myEvent.keyCode == 87){ document.getElementById('myImage03').style.top = parseInt(document.getElementById('myImage03').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage03').style.left = parseInt(document.getElementById('myImage03').style.left) + 50 + 'px'}	
+//topwall
+ if (myEvent.keyCode == 83){ document.getElementById('myImage06').style.top = parseInt(document.getElementById('myImage06').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage06').style.left = parseInt(document.getElementById('myImage06').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage06').style.top = parseInt(document.getElementById('myImage06').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage06').style.left = parseInt(document.getElementById('myImage06').style.left) + 50 + 'px'}
+//rightwall
+ if (myEvent.keyCode == 83){ document.getElementById('myImage07').style.top = parseInt(document.getElementById('myImage07').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage07').style.left = parseInt(document.getElementById('myImage07').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage07').style.top = parseInt(document.getElementById('myImage07').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage07').style.left = parseInt(document.getElementById('myImage07').style.left) + 50 + 'px'}
+//door
+
+ if (myEvent.keyCode == 83){ document.getElementById('myImage09').style.top = parseInt(document.getElementById('myImage09').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage09').style.left = parseInt(document.getElementById('myImage09').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage09').style.top = parseInt(document.getElementById('myImage09').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage09').style.left = parseInt(document.getElementById('myImage09').style.left) + 50 + 'px'}
+
+ if (myEvent.keyCode == 83){ document.getElementById('myImage10').style.top = parseInt(document.getElementById('myImage10').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage10').style.left = parseInt(document.getElementById('myImage10').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage10').style.top = parseInt(document.getElementById('myImage10').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage10').style.left = parseInt(document.getElementById('myImage10').style.left) + 50 + 'px'}
+
+ if (myEvent.keyCode == 83){ document.getElementById('myImage11').style.top = parseInt(document.getElementById('myImage11').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage11').style.left = parseInt(document.getElementById('myImage11').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage11').style.top = parseInt(document.getElementById('myImage11').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage11').style.left = parseInt(document.getElementById('myImage11').style.left) + 50 + 'px'}
+
+ if (myEvent.keyCode == 83){ document.getElementById('myImage12').style.top = parseInt(document.getElementById('myImage12').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage12').style.left = parseInt(document.getElementById('myImage12').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage12').style.top = parseInt(document.getElementById('myImage12').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage12').style.left = parseInt(document.getElementById('myImage12').style.left) + 50 + 'px'}
+}
+
+
+
+
+function myHitOther(my1, my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+function myGame(){
+
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+
