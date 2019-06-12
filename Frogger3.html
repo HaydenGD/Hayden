@@ -7,19 +7,18 @@
 <p>-----bride is win; Get the girl ----></p>
 </font>
 <img id="myImage13" src="bride.png" style="position:absolute; width: 150; height: 175; left:450px; top:100px; ">
-<img id="myImage05" src="key.png" style="position:absolute; width: 50; height: 50; left:950px; top:570px; ">
-<img id="myImage01" src="m.png" style="position:absolute; width: 50; height: 50; left:600px; top:550px; ">
+
+<img id="myImage01" src="m.png" style="position:absolute; width: 50; height: 50; left:950px; top:550px; ">
 <img id="myImage02" src="frogger.png" style="position:absolute; width: 635; height: 100; left:165px; top:755px; ">
 <img id="myImage03" src="frogger.png" style="position:absolute; width: 635; height: 100; left:165px; top:295px; ">
-<img id="myImage04" src="frogger.png" style="position:absolute; width: 50; height: 420; left:165px; top:350px; ">
+<img id="myImage04" src="frogger.png" style="position:absolute; width: 50; height: 199; left:165px; top:350px; ">
 <img id="myImage06" src="frogger.png" style="position:absolute; width: 50; height: 170; left:750px; top:350px; ">
-<img id="myImage07" src="a.png" style="position:absolute; width: 50; height: 50; left:165px; top:550px; ">
 
 <img id="myImage09" src="frogger.png" style="position:absolute; width: 50; height: 170; left:750px; top:650px; ">
 <img id="myImage10" src="frogger.png" style="position:absolute; width: 300; height: 50; left:750px; top:650px; ">
 <img id="myImage11" src="frogger.png" style="position:absolute; width: 300; height: 50; left:750px; top:490px; ">
 <img id="myImage12" src="frogger.png" style="position:absolute; width: 50; height: 210; left:1050px; top:490px; ">
-
+<img id="myImage08" src="frogger.png" style="position:absolute; width: 50; height: 210; left:165px; top:605px; ">
 
 
 
@@ -46,7 +45,10 @@ if (myHitOther('myImage01','myImage11')) {location.reload()}
 
 if (myHitOther('myImage01','myImage12')) {location.reload()}
 
-if (myHitOther('myImage01','myImage05')) {window.location.href = "frogger3.html";}
+if (myHitOther('myImage01','myImage08')) {location.reload()}
+
+
+if (myHitOther('myImage01','myImage13')) {window.location.href = "Frogger4.html";}
 
 
 
@@ -62,11 +64,6 @@ if (myHitOther('myImage01','myImage05')) {window.location.href = "frogger3.html"
  if (myEvent.keyCode == 87){ document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 50 + 'px'}
  if (myEvent.keyCode == 65){ document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) + 50 + 'px'}																			 
 //bottomwall
- if (myEvent.keyCode == 83){ document.getElementById('myImage05').style.top = parseInt(document.getElementById('myImage05').style.top) - 50 + 'px'}
- if (myEvent.keyCode == 68){ document.getElementById('myImage05').style.left = parseInt(document.getElementById('myImage05').style.left) - 50 + 'px' }					
- if (myEvent.keyCode == 87){ document.getElementById('myImage05').style.top = parseInt(document.getElementById('myImage05').style.top) + 50 + 'px'}
- if (myEvent.keyCode == 65){ document.getElementById('myImage05').style.left = parseInt(document.getElementById('myImage05').style.left) + 50 + 'px'}	
-//goal
  if (myEvent.keyCode == 83){ document.getElementById('myImage04').style.top = parseInt(document.getElementById('myImage04').style.top) - 50 + 'px'}
  if (myEvent.keyCode == 68){ document.getElementById('myImage04').style.left = parseInt(document.getElementById('myImage04').style.left) - 50 + 'px' }					
  if (myEvent.keyCode == 87){ document.getElementById('myImage04').style.top = parseInt(document.getElementById('myImage04').style.top) + 50 + 'px'}
@@ -82,11 +79,11 @@ if (myHitOther('myImage01','myImage05')) {window.location.href = "frogger3.html"
  if (myEvent.keyCode == 87){ document.getElementById('myImage06').style.top = parseInt(document.getElementById('myImage06').style.top) + 50 + 'px'}
  if (myEvent.keyCode == 65){ document.getElementById('myImage06').style.left = parseInt(document.getElementById('myImage06').style.left) + 50 + 'px'}
 //rightwall
- if (myEvent.keyCode == 83){ document.getElementById('myImage07').style.top = parseInt(document.getElementById('myImage07').style.top) - 50 + 'px'}
- if (myEvent.keyCode == 68){ document.getElementById('myImage07').style.left = parseInt(document.getElementById('myImage07').style.left) - 50 + 'px' }																	
- if (myEvent.keyCode == 87){ document.getElementById('myImage07').style.top = parseInt(document.getElementById('myImage07').style.top) + 50 + 'px'}
- if (myEvent.keyCode == 65){ document.getElementById('myImage07').style.left = parseInt(document.getElementById('myImage07').style.left) + 50 + 'px'}
-//door
+
+ if (myEvent.keyCode == 83){ document.getElementById('myImage08').style.top = parseInt(document.getElementById('myImage08').style.top) - 50 + 'px'}
+ if (myEvent.keyCode == 68){ document.getElementById('myImage08').style.left = parseInt(document.getElementById('myImage08').style.left) - 50 + 'px' }																	
+ if (myEvent.keyCode == 87){ document.getElementById('myImage08').style.top = parseInt(document.getElementById('myImage08').style.top) + 50 + 'px'}
+ if (myEvent.keyCode == 65){ document.getElementById('myImage08').style.left = parseInt(document.getElementById('myImage08').style.left) + 50 + 'px'}
 
  if (myEvent.keyCode == 83){ document.getElementById('myImage09').style.top = parseInt(document.getElementById('myImage09').style.top) - 50 + 'px'}
  if (myEvent.keyCode == 68){ document.getElementById('myImage09').style.left = parseInt(document.getElementById('myImage09').style.left) - 50 + 'px' }																	
@@ -112,6 +109,7 @@ if (myHitOther('myImage01','myImage05')) {window.location.href = "frogger3.html"
  if (myEvent.keyCode == 68){ document.getElementById('myImage13').style.left = parseInt(document.getElementById('myImage13').style.left) - 26 + 'px' }				
  if (myEvent.keyCode == 87){ document.getElementById('myImage13').style.top = parseInt(document.getElementById('myImage13').style.top) + 26 + 'px'}
  if (myEvent.keyCode == 65){ document.getElementById('myImage13').style.left = parseInt(document.getElementById('myImage13').style.left) + 26 + 'px'}
+
 }
 
 

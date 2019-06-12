@@ -1,0 +1,65 @@
+<h1><font color = white> Frogger </font></h1>
+
+<p> kiss </p>
+<img id="myImage13" src="bride.png" style="position:absolute; width: 650; height: 675; left:600px; top:150px; ">
+
+<img id="myImage01" src="kiss.png" style="position:absolute; width: 600; height: 600; left:100px; top:50px; ">
+
+<img id="myImage02" src="transparent.png" style="position:absolute; width: 100; height: 600; left:970px; top:50px; ">
+
+
+<script>
+
+document.onkeydown = checkKey
+
+function checkKey(myEvent){
+
+
+
+
+
+if (myHitOther('myImage01','myImage02')) {window.location.href = "https://www.youtube.com/watch?v=TUEjaiUdqxA&feature=youtu.be";}
+
+
+
+ if (myEvent.keyCode == 68){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 26 + 'px'}
+//player
+
+
+}
+
+
+
+
+function myHitOther(my1, my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+function myGame(){
+
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+
